@@ -42,7 +42,7 @@ const makingTree = async (req, res) => {
       context.fill();
 
       // Draw label
-      context.fillText(node.data.name, node.x, node.y - 10); 
+      context.fillText(node.data.value, node.x, node.y - 10); 
     });
 
     const buffer = canvas.toBuffer("image/png");
