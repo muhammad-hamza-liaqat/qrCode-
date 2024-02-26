@@ -8,11 +8,11 @@ const makingTree = async (req, res) => {
     return res.status(400).send("JSON data is required.");
   }
   try {
-    const canvas = createCanvas(1200, 1000);
+    const canvas = createCanvas(1600, 1200); // Increase canvas size for better spacing
     const context = canvas.getContext("2d");
 
-    // Set background color to grey
-    context.fillStyle = "#f0f0f0"; // Light grey
+    // Set background color to white for better contrast
+    context.fillStyle = "#ffffff"; // White
     context.fillRect(0, 0, canvas.width, canvas.height);
 
     const { hierarchy, tree } = await import("d3");
@@ -41,14 +41,14 @@ const makingTree = async (req, res) => {
       // Draw node
       context.fillStyle = "#4CAF50"; // Green
       context.beginPath();
-      context.arc(node.x + margin.left, node.y + margin.top, 5, 0, 2 * Math.PI); // Adjusted position
+      context.arc(node.x + margin.left, node.y + margin.top, 10, 0, 2 * Math.PI); // Increased node size for better visibility
       context.fill();
 
       // Draw label
       context.fillStyle = "#000"; // Black
-      context.font = "14px Arial";
+      context.font = "16px Arial"; // Increased font size for better readability
       context.textAlign = "center";
-      context.fillText(node.data.value, node.x + margin.left, node.y + margin.top - 10); // Adjusted position
+      context.fillText(node.data.value, node.x + margin.left, node.y + margin.top + 5); // Adjusted position for label
     });
 
     // Create the 'trees' folder if it doesn't exist
