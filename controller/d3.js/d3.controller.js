@@ -1,5 +1,6 @@
 const { createCanvas } = require("canvas");
 const fs = require("fs");
+const path = require("path");
 
 const makingTree = async (req, res) => {
   const json = req.body;
@@ -45,10 +46,22 @@ const makingTree = async (req, res) => {
       context.fillText(node.data.value, node.x, node.y - 10); 
     });
 
+    // Create the 'trees' folder if it doesn't exist
+    const treesFolderPath = path.join(__dirname, "..", "..", "tree_structure_graph");
+    if (!fs.existsSync(treesFolderPath)) {
+      fs.mkdirSync(treesFolderPath);
+    }
+
+    // Generate a unique filename with timestamp
+    const timestamp = Date.now();
+    const filename = `tree_${timestamp}.png`;
+    const filePath = path.join(treesFolderPath, filename);
+
     const buffer = canvas.toBuffer("image/png");
 
-    fs.writeFileSync("tree.png", buffer);
-    res.send("Tree visualization image generated: tree.png");
+    // Save the image to a file
+    fs.writeFileSync(filePath, buffer);
+    res.send(`Tree visualization image generated: ${filename}`);
   } catch (error) {
     console.error("Error:", error);
     res.status(500).send("Internal server error");
