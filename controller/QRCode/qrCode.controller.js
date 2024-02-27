@@ -11,44 +11,36 @@ const generateQRCode = async (req, res) => {
   
   try {
     const qrCodeText = `${url}`;
-    qr.toDataURL(qrCodeText, { type: 'png' }, async (err, qrCodeDataURL) => {
-      if (err) {
-        console.error("Error generating QR code:", err);
-        return res.status(500).json({ message: "Error generating QR code", error: err });
-      }
 
-      const uploadDirectory = path.join(process.cwd(), 'uploads');
-      if (!fs.existsSync(uploadDirectory)) {
-        fs.mkdirSync(uploadDirectory);
-      }
+    const uploadDirectory = path.join(process.cwd(), 'uploads');
+    if (!fs.existsSync(uploadDirectory)) {
+      fs.mkdirSync(uploadDirectory);
+    }
 
-      const currentDate = Date.now(); 
-      const fileName = `${currentDate}.png`; 
-      const filePath = path.join(uploadDirectory, fileName);
+    const currentTime = new Date().toLocaleTimeString('en-US', { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' }).replace(/:/g, '-');
+    const fileName = `${currentTime}.png`; 
+    const filePath = path.join(uploadDirectory, fileName);
+    
+    await qr.toFile(filePath, qrCodeText);
 
-      const base64Image = qrCodeDataURL;
-      fs.writeFileSync(filePath, Buffer.from(base64Image.split(';base64,')[1], 'base64'));
+    // Construct complete URL with prefix
+    const baseURL = "http://localhost:3000/uploads/";
+    const imageURL = baseURL + fileName;
 
-
-      const newBaseURL = await qrCodeModel.create({
-        imageURL: qrCodeDataURL,
-        path: filePath.replace(process.cwd(), '')
-      });
-      console.log("QR code image saved to database");
-
-      return res.status(200).json({
-        message: "QR code generated and saved successfully!",
-        _id: newBaseURL._id,
-        imageURL: qrCodeDataURL,
-        path: filePath.replace(process.cwd(), '')
-      });
+    const newQRCode = await qrCodeModel.create({
+      path: imageURL
+    });
+    console.log("QR code image saved to database", newQRCode);
+    return res.status(200).json({
+      message: "QR code generated and saved successfully!",
+      _id: newQRCode._id,
+      path: imageURL
     });
   } catch (error) {
     console.error("Error occurred at QR code controller:", error);
     return res.status(500).json({ message: "Internal server error", error: error });
   }
 };
-
 // the id and URL is stored in the DB.
 const getData = async (req, res) => {
   const id = req.params.id;

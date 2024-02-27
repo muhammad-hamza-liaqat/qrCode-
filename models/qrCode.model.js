@@ -1,10 +1,6 @@
 const mongoose = require("mongoose");
 
 const QRCode = new mongoose.Schema({
-    imageURL:{
-        type: String,
-        required: true
-    },
     path:{
         type: String,
         required: true
