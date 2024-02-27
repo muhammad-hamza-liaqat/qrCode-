@@ -16,19 +16,22 @@ const generateQRCode = async (req, res) => {
         console.error("Error generating QR code:", err);
         return res.status(500).json({ message: "Error generating QR code", error: err });
       }
-      const base64Image = qrCodeDataURL.split(';base64,').pop();
-      const uploadDirectory = path.join(__dirname, 'uploads');
+
+      const uploadDirectory = path.join(__dirname, '..', 'uploads'); // Adjusted path
       if (!fs.existsSync(uploadDirectory)) {
         fs.mkdirSync(uploadDirectory);
       }
-      const currentDate = new Date().toISOString().slice(0, 10); // Get current date
+
+      const currentDate = new Date().toISOString().slice(0, 10); 
       const fileName = `${currentDate}-${encodeURIComponent(url)}.png`;
       const filePath = path.join(uploadDirectory, fileName);
 
-      fs.writeFileSync(filePath, Buffer.from(base64Image, 'base64'));
+      const base64Image = qrCodeDataURL;
+      fs.writeFileSync(filePath, Buffer.from(base64Image.split(';base64,')[1], 'base64'));
+
 
       const newBaseURL = await qrCodeModel.create({
-        imageURL: base64Image,
+        imageURL: qrCodeDataURL,
         path: filePath.replace(__dirname, '')
       });
       console.log("QR code image saved to database");
@@ -36,9 +39,8 @@ const generateQRCode = async (req, res) => {
       return res.status(200).json({
         message: "QR code generated and saved successfully!",
         _id: newBaseURL._id,
-        path: filePath.replace(__dirname, ''),
-        imageURL: base64Image,
-
+        imageURL: qrCodeDataURL,
+        path: filePath.replace(__dirname, '')
       });
     });
   } catch (error) {
@@ -46,6 +48,8 @@ const generateQRCode = async (req, res) => {
     return res.status(500).json({ message: "Internal server error", error: error });
   }
 };
+
+
 
 // the id and URL is stored in the DB.
 const getData = async (req, res) => {
