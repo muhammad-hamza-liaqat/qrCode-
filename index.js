@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// 
+// express static
 app.use("/uploads",express.static('uploads'));
 
 
