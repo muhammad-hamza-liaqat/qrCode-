@@ -17,7 +17,7 @@ const generateQRCode = async (req, res) => {
       fs.mkdirSync(uploadDirectory);
     }
 
-    const currentTime = new Date().toLocaleTimeString('en-US', { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' }).replace(/:/g, '-');
+    const currentTime = new Date().getTime().toString();
     const fileName = `${currentTime}.png`; 
     const filePath = path.join(uploadDirectory, fileName);
     
@@ -41,6 +41,7 @@ const generateQRCode = async (req, res) => {
     return res.status(500).json({ message: "Internal server error", error: error });
   }
 };
+
 // the id and URL is stored in the DB.
 const getData = async (req, res) => {
   const id = req.params.id;
