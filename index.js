@@ -14,6 +14,10 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// 
+app.use("/uploads",express.static('uploads'));
+
+
 // routes
 app.use("/api", qrRoute);
 app.use("/api", d3Routes);
