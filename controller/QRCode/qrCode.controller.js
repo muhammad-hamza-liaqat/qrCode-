@@ -11,7 +11,7 @@ const generateQRCode = async (req, res) => {
   try {
     const qrCodeText = `${name}`;
     const qrCode = await qr.toDataURL(qrCodeText);
-    console.log("qrCode generated=>", qrCode);
+    // console.log("qrCode generated=>", qrCode);
 
     // storing the record in the DB.
     const newBaseURL = await qrCodeModel.create({
