@@ -4,34 +4,55 @@ const fs = require("fs");
 const path = require("path");
 
 const generateQRCode = async (req, res) => {
-  const { name } = req.body;
-  if (!name) {
-    return res.status(400).json({ message: "all fields are required!" });
+  const { url } = req.body;
+  if (!url) {
+    return res.status(400).json({ message: "URL field is required!" });
   }
+  
   try {
-    const qrCodeText = `${name}`;
-    const qrCode = await qr.toDataURL(qrCodeText);
-    // console.log("qrCode generated=>", qrCode);
+    const qrCodeText = `${url}`;
+    // Generate the QR code image as data URL asynchronously
+    qr.toDataURL(qrCodeText, { type: 'png' }, async (err, qrCodeDataURL) => {
+      if (err) {
+        console.error("Error generating QR code:", err);
+        return res.status(500).json({ message: "Error generating QR code", error: err });
+      }
 
-    // storing the record in the DB.
-    const newBaseURL = await qrCodeModel.create({
-      image: qrCode,
-    });
-    console.log("base64 saved to database");
+      // Convert the data URL to base64
+      const base64Image = qrCodeDataURL.split(';base64,').pop();
 
-    // response will send message, code base64URL, and id of the record in the database
-    return res
-      .status(200)
-      .json({
-        message: "qr generated successfully!",
-        _id: newBaseURL._id,
-        code: qrCode,
+      // Determine directory for saving
+      const uploadDirectory = path.join(__dirname, 'uploads');
+      if (!fs.existsSync(uploadDirectory)) {
+        fs.mkdirSync(uploadDirectory);
+      }
+
+      // Construct file name with date and URL
+      const currentDate = new Date().toISOString().slice(0, 10); // Get current date
+      const fileName = `${currentDate}-${encodeURIComponent(url)}.png`;
+      const filePath = path.join(uploadDirectory, fileName);
+
+      // Save QR code image data URL to file
+      fs.writeFileSync(filePath, Buffer.from(base64Image, 'base64'));
+
+      // Store the record in the DB with base64 image URL and relative path
+      const newBaseURL = await qrCodeModel.create({
+        imageURL: base64Image,
+        path: filePath.replace(__dirname, '') // Get relative path from project directory
       });
+      console.log("QR code image saved to database");
+
+      // Respond with message, image URL, and ID
+      return res.status(200).json({
+        message: "QR code generated and saved successfully!",
+        _id: newBaseURL._id,
+        imageURL: base64Image,
+        path: filePath.replace(__dirname, '') // Return relative path in response
+      });
+    });
   } catch (error) {
-    console.log("error occured at qr code controller ", error);
-    return res
-      .status(500)
-      .json({ message: "internal server error", error: error });
+    console.error("Error occurred at QR code controller:", error);
+    return res.status(500).json({ message: "Internal server error", error: error });
   }
 };
 
