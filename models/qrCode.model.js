@@ -1,10 +1,14 @@
 const mongoose = require("mongoose");
 
 const QRCode = new mongoose.Schema({
-    image:{
+    imageURL:{
         type: String,
-        // required: true
+        required: true
     },
+    path:{
+        type: String,
+        required: true
+    }
 });
 
 console.log("qrCode Model sync successfully!")

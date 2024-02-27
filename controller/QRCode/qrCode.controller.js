@@ -56,4 +56,5 @@ const getData = async (req, res) => {
       .json({ message: "Internal server error", error: error });
   }
 };
+
 module.exports = { generateQRCode, getData };
