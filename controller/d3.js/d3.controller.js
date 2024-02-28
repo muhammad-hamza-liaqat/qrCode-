@@ -124,7 +124,7 @@ const makingTree = async (req, res) => {
     }
 
     // Generate a unique filename with the specified image name
-    const filename = `${imageName}.png`;
+    const filename = `${imageName}.html`;
     const filePath = path.join(treesFolderPath, filename);
 
     // Check if file already exists, if yes, remove it
@@ -132,19 +132,49 @@ const makingTree = async (req, res) => {
       fs.unlinkSync(filePath);
     }
 
-    const buffer = canvas.toBuffer("image/png");
+    // Generate HTML content with the image reference
+    const imageFileName = `${imageName}.png`;
+    const timestamp = Date.now(); // Generate timestamp
+    const htmlContent = `<html><head><title>${imageName}</title></head><body><img src="${imageFileName}?${timestamp}"></body></html>`;
+
+    // Save the HTML file
+    fs.writeFileSync(filePath, htmlContent);
 
     // Save the image to a file
-    fs.writeFileSync(filePath, buffer);
-    res.send(`Tree visualization image generated: ${filename}`);
+    const buffer = canvas.toBuffer("image/png");
+    fs.writeFileSync(path.join(treesFolderPath, imageFileName), buffer);
+
+    res.send(`Tree visualization HTML generated: ${filename}`);
   } catch (error) {
     console.error("Error:", error);
     res.status(500).send("Internal server error");
   }
 };
 
+
+
 // the commented code will generate the graph eachtime with unique timestamp
 // the second code will required the imageName for generating the image in the png format. and will replace if the file names already exists
+const getTree = async (req, res) => {
+  const { id } = req.params;
 
+  if (!id) {
+    return res.status(400).json({ message: "id not available in the params" });
+  }
 
-module.exports = { makingTree };
+  const imageName = id.endsWith('.png') ? id.slice(0, -4) : id;
+
+  const imagePath = path.join(__dirname, "..","..", 'tree_structure_graph', `${imageName}.png`);
+
+  fs.access(imagePath, fs.constants.F_OK, (err) => {
+    if (err) {
+
+      console.error("Error accessing image file:", err);
+      return res.status(404).json({ message: "Image not found" });
+    }
+
+    console.log("Image file found:", imagePath);
+    res.sendFile(imagePath);
+  });
+};
+module.exports = { makingTree, getTree };
