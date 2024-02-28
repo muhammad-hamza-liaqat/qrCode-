@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Tree Visualization</title>
+</head>
+<body>
+  <div id="treeData"></div>
+
+  <script>
+    fetch('/making-tree')
+      .then(response => response.json())
+      .then(data => {
+        // Display JSON data
+        document.getElementById('treeData').innerText = JSON.stringify(data.jsonData, null, 2);
+      })
+      .catch(error => console.error('Error fetching data:', error));
+  </script>
+</body>
+</html>
