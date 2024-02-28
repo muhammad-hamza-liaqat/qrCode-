@@ -1,0 +1,886 @@
+
+
+{   "imageName": "hamza-test", 
+    "json":{
+        "_id": "65d8358c050ce9ddd865e70a",
+        "value": 1,
+        "user": "65d58c02ff92538d09c4b81a",
+        "inviteAccepted": 26,
+        "children": [
+            {
+                "_id": "65d8364c050ce9ddd865e711",
+                "value": 2,
+                "referenceNode": "65d8358c050ce9ddd865e70a",
+                "parentNode": "65d8358c050ce9ddd865e70a",
+                "user": "65d58c02ff92538d09c4b81a",
+                "tree": "65d8358c050ce9ddd865e70c",
+                "inviteAccepted": 17,
+                "children": [
+                    {
+                        "_id": "65d83660050ce9ddd865e726",
+                        "value": 5,
+                        "referenceNode": "65d8358c050ce9ddd865e70a",
+                        "parentNode": "65d8364c050ce9ddd865e711",
+                        "user": "65d58c02ff92538d09c4b81a",
+                        "tree": "65d8358c050ce9ddd865e70c",
+                        "inviteAccepted": 0,
+                        "children": [
+                            {
+                                "_id": "65d838fd050ce9ddd865e772",
+                                "value": 14,
+                                "referenceNode": "65d8364c050ce9ddd865e711",
+                                "parentNode": "65d83660050ce9ddd865e726",
+                                "user": "65d58c02ff92538d09c4b81a",
+                                "tree": "65d8358c050ce9ddd865e70c",
+                                "inviteAccepted": 0,
+                                "children": [
+                                    {
+                                        "_id": "65d83dd9f99d5e40bea38d8b",
+                                        "value": 41,
+                                        "referenceNode": "65d8364c050ce9ddd865e711",
+                                        "parentNode": "65d838fd050ce9ddd865e772",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    },
+                                    {
+                                        "_id": "65d83de3f99d5e40bea38d9b",
+                                        "value": 42,
+                                        "referenceNode": "65d8364c050ce9ddd865e711",
+                                        "parentNode": "65d838fd050ce9ddd865e772",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    },
+                                    {
+                                        "_id": "65d83deef99d5e40bea38dab",
+                                        "value": 43,
+                                        "referenceNode": "65d8364c050ce9ddd865e711",
+                                        "parentNode": "65d838fd050ce9ddd865e772",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    }
+                                ],
+                                "__v": 0
+                            },
+                            {
+                                "_id": "65d839fb050ce9ddd865e7ac",
+                                "value": 15,
+                                "referenceNode": "65d8358c050ce9ddd865e70a",
+                                "parentNode": "65d83660050ce9ddd865e726",
+                                "user": "65d58c02ff92538d09c4b81a",
+                                "tree": "65d8358c050ce9ddd865e70c",
+                                "inviteAccepted": 0,
+                                "children": [
+                                    {
+                                        "_id": "65d84512f99d5e40bea38df9",
+                                        "value": 44,
+                                        "referenceNode": "65d8358c050ce9ddd865e70a",
+                                        "parentNode": "65d839fb050ce9ddd865e7ac",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    },
+                                    {
+                                        "_id": "65d8451ef99d5e40bea38e1d",
+                                        "value": 45,
+                                        "referenceNode": "65d8358c050ce9ddd865e70a",
+                                        "parentNode": "65d839fb050ce9ddd865e7ac",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    },
+                                    {
+                                        "_id": "65d84524f99d5e40bea38e41",
+                                        "value": 46,
+                                        "referenceNode": "65d8358c050ce9ddd865e70a",
+                                        "parentNode": "65d839fb050ce9ddd865e7ac",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    }
+                                ],
+                                "__v": 0
+                            },
+                            {
+                                "_id": "65d83a29050ce9ddd865e7b6",
+                                "value": 16,
+                                "referenceNode": "65d8364c050ce9ddd865e711",
+                                "parentNode": "65d83660050ce9ddd865e726",
+                                "user": "65d58c02ff92538d09c4b81a",
+                                "tree": "65d8358c050ce9ddd865e70c",
+                                "inviteAccepted": 3,
+                                "children": [
+                                    {
+                                        "_id": "65d83a5e050ce9ddd865e7bd",
+                                        "value": 47,
+                                        "referenceNode": "65d83a29050ce9ddd865e7b6",
+                                        "parentNode": "65d83a29050ce9ddd865e7b6",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    },
+                                    {
+                                        "_id": "65d83a6e050ce9ddd865e7c3",
+                                        "value": 48,
+                                        "referenceNode": "65d83a29050ce9ddd865e7b6",
+                                        "parentNode": "65d83a29050ce9ddd865e7b6",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    },
+                                    {
+                                        "_id": "65d83a75050ce9ddd865e7c9",
+                                        "value": 49,
+                                        "referenceNode": "65d83a29050ce9ddd865e7b6",
+                                        "parentNode": "65d83a29050ce9ddd865e7b6",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    }
+                                ],
+                                "__v": 0
+                            }
+                        ],
+                        "__v": 0
+                    },
+                    {
+                        "_id": "65d83664050ce9ddd865e730",
+                        "value": 6,
+                        "referenceNode": "65d8358c050ce9ddd865e70a",
+                        "parentNode": "65d8364c050ce9ddd865e711",
+                        "user": "65d58c02ff92538d09c4b81a",
+                        "tree": "65d8358c050ce9ddd865e70c",
+                        "inviteAccepted": 5,
+                        "children": [
+                            {
+                                "_id": "65d83be0f99d5e40bea38ca9",
+                                "value": 17,
+                                "referenceNode": "65d8358c050ce9ddd865e70a",
+                                "parentNode": "65d83664050ce9ddd865e730",
+                                "user": "65d58c02ff92538d09c4b81a",
+                                "tree": "65d8358c050ce9ddd865e70c",
+                                "inviteAccepted": 0,
+                                "children": [
+                                    {
+                                        "_id": "65d84597f99d5e40bea38e57",
+                                        "value": 50,
+                                        "referenceNode": "65d8364c050ce9ddd865e711",
+                                        "parentNode": "65d83be0f99d5e40bea38ca9",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    },
+                                    {
+                                        "_id": "65d845a6f99d5e40bea38e6d",
+                                        "value": 51,
+                                        "referenceNode": "65d8364c050ce9ddd865e711",
+                                        "parentNode": "65d83be0f99d5e40bea38ca9",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    },
+                                    {
+                                        "_id": "65d845aef99d5e40bea38e83",
+                                        "value": 52,
+                                        "referenceNode": "65d8364c050ce9ddd865e711",
+                                        "parentNode": "65d83be0f99d5e40bea38ca9",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    }
+                                ],
+                                "__v": 0
+                            },
+                            {
+                                "_id": "65d83bfaf99d5e40bea38cb0",
+                                "value": 18,
+                                "referenceNode": "65d83664050ce9ddd865e730",
+                                "parentNode": "65d83664050ce9ddd865e730",
+                                "user": "65d58c02ff92538d09c4b81a",
+                                "tree": "65d8358c050ce9ddd865e70c",
+                                "inviteAccepted": 0,
+                                "children": [
+                                    {
+                                        "_id": "65d84bfcf99d5e40bea38ebf",
+                                        "value": 53,
+                                        "referenceNode": "65d83664050ce9ddd865e730",
+                                        "parentNode": "65d83bfaf99d5e40bea38cb0",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    },
+                                    {
+                                        "_id": "65d84c5af99d5e40bea38ecb",
+                                        "value": 54,
+                                        "referenceNode": "65d83664050ce9ddd865e730",
+                                        "parentNode": "65d83bfaf99d5e40bea38cb0",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    },
+                                    {
+                                        "_id": "65d84c5ff99d5e40bea38ed7",
+                                        "value": 55,
+                                        "referenceNode": "65d83664050ce9ddd865e730",
+                                        "parentNode": "65d83bfaf99d5e40bea38cb0",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    }
+                                ],
+                                "__v": 0
+                            },
+                            {
+                                "_id": "65d83c01f99d5e40bea38cb6",
+                                "value": 19,
+                                "referenceNode": "65d83664050ce9ddd865e730",
+                                "parentNode": "65d83664050ce9ddd865e730",
+                                "user": "65d58c02ff92538d09c4b81a",
+                                "tree": "65d8358c050ce9ddd865e70c",
+                                "inviteAccepted": 0,
+                                "children": [
+                                    {
+                                        "_id": "65d866d5f99d5e40bea38f99",
+                                        "value": 56,
+                                        "referenceNode": "65d8358c050ce9ddd865e70a",
+                                        "parentNode": "65d83c01f99d5e40bea38cb6",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    },
+                                    {
+                                        "_id": "65d866f7f99d5e40bea38fc5",
+                                        "value": 57,
+                                        "referenceNode": "65d8358c050ce9ddd865e70a",
+                                        "parentNode": "65d83c01f99d5e40bea38cb6",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    },
+                                    {
+                                        "_id": "65d866fcf99d5e40bea38ff1",
+                                        "value": 58,
+                                        "referenceNode": "65d8358c050ce9ddd865e70a",
+                                        "parentNode": "65d83c01f99d5e40bea38cb6",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    }
+                                ],
+                                "__v": 0
+                            }
+                        ],
+                        "__v": 0
+                    },
+                    {
+                        "_id": "65d837e0050ce9ddd865e73a",
+                        "value": 7,
+                        "referenceNode": "65d8358c050ce9ddd865e70a",
+                        "parentNode": "65d8364c050ce9ddd865e711",
+                        "user": "65d58c02ff92538d09c4b81a",
+                        "tree": "65d8358c050ce9ddd865e70c",
+                        "inviteAccepted": 0,
+                        "children": [
+                            {
+                                "_id": "65d83c2cf99d5e40bea38cc9",
+                                "value": 20,
+                                "referenceNode": "65d8358c050ce9ddd865e70a",
+                                "parentNode": "65d837e0050ce9ddd865e73a",
+                                "user": "65d58c02ff92538d09c4b81a",
+                                "tree": "65d8358c050ce9ddd865e70c",
+                                "inviteAccepted": 0,
+                                "children": [
+                                    {
+                                        "_id": "65d8673cf99d5e40bea3900d",
+                                        "value": 59,
+                                        "referenceNode": "65d8364c050ce9ddd865e711",
+                                        "parentNode": "65d83c2cf99d5e40bea38cc9",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    },
+                                    {
+                                        "_id": "65d8674ef99d5e40bea39029",
+                                        "value": 60,
+                                        "referenceNode": "65d8364c050ce9ddd865e711",
+                                        "parentNode": "65d83c2cf99d5e40bea38cc9",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    },
+                                    {
+                                        "_id": "65d86754f99d5e40bea39045",
+                                        "value": 61,
+                                        "referenceNode": "65d8364c050ce9ddd865e711",
+                                        "parentNode": "65d83c2cf99d5e40bea38cc9",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    }
+                                ],
+                                "__v": 0
+                            },
+                            {
+                                "_id": "65d83c3bf99d5e40bea38cdd",
+                                "value": 21,
+                                "referenceNode": "65d8358c050ce9ddd865e70a",
+                                "parentNode": "65d837e0050ce9ddd865e73a",
+                                "user": "65d58c02ff92538d09c4b81a",
+                                "tree": "65d8358c050ce9ddd865e70c",
+                                "inviteAccepted": 0,
+                                "children": [
+                                    {
+                                        "_id": "65d86972f99d5e40bea39063",
+                                        "value": 62,
+                                        "referenceNode": "65d8364c050ce9ddd865e711",
+                                        "parentNode": "65d83c3bf99d5e40bea38cdd",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    },
+                                    {
+                                        "_id": "65d86976f99d5e40bea39081",
+                                        "value": 63,
+                                        "referenceNode": "65d8364c050ce9ddd865e711",
+                                        "parentNode": "65d83c3bf99d5e40bea38cdd",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    },
+                                    {
+                                        "_id": "65d871173fc7bc042b2b64fd",
+                                        "value": 64,
+                                        "referenceNode": "65d8364c050ce9ddd865e711",
+                                        "parentNode": "65d83c3bf99d5e40bea38cdd",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    }
+                                ],
+                                "__v": 0
+                            },
+                            {
+                                "_id": "65d83c6ff99d5e40bea38ceb",
+                                "value": 22,
+                                "referenceNode": "65d8364c050ce9ddd865e711",
+                                "parentNode": "65d837e0050ce9ddd865e73a",
+                                "user": "65d58c02ff92538d09c4b81a",
+                                "tree": "65d8358c050ce9ddd865e70c",
+                                "inviteAccepted": 0,
+                                "children": [
+                                    {
+                                        "_id": "65d871b0e0d1ca2b57d278fd",
+                                        "value": 65,
+                                        "referenceNode": "65d8364c050ce9ddd865e711",
+                                        "parentNode": "65d83c6ff99d5e40bea38ceb",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    },
+                                    {
+                                        "_id": "65d87201575efe89759981fc",
+                                        "value": 66,
+                                        "referenceNode": "65d8364c050ce9ddd865e711",
+                                        "parentNode": "65d83c6ff99d5e40bea38ceb",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    }
+                                ],
+                                "__v": 0
+                            }
+                        ],
+                        "__v": 0
+                    }
+                ],
+                "__v": 0
+            },
+            {
+                "_id": "65d83656050ce9ddd865e717",
+                "value": 3,
+                "referenceNode": "65d8358c050ce9ddd865e70a",
+                "parentNode": "65d8358c050ce9ddd865e70a",
+                "user": "65d58c02ff92538d09c4b81a",
+                "tree": "65d8358c050ce9ddd865e70c",
+                "inviteAccepted": 12,
+                "children": [
+                    {
+                        "_id": "65d837e6050ce9ddd865e746",
+                        "value": 8,
+                        "referenceNode": "65d8358c050ce9ddd865e70a",
+                        "parentNode": "65d83656050ce9ddd865e717",
+                        "user": "65d58c02ff92538d09c4b81a",
+                        "tree": "65d8358c050ce9ddd865e70c",
+                        "inviteAccepted": 2,
+                        "children": [
+                            {
+                                "_id": "65d8388c050ce9ddd865e768",
+                                "value": 23,
+                                "referenceNode": "65d83656050ce9ddd865e717",
+                                "parentNode": "65d837e6050ce9ddd865e746",
+                                "user": "65d58c02ff92538d09c4b81a",
+                                "tree": "65d8358c050ce9ddd865e70c",
+                                "inviteAccepted": 0,
+                                "children": [
+                                    {
+                                        "_id": "65d84caaf99d5e40bea38ee7",
+                                        "value": 68,
+                                        "referenceNode": "65d83656050ce9ddd865e717",
+                                        "parentNode": "65d8388c050ce9ddd865e768",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    },
+                                    {
+                                        "_id": "65d84caff99d5e40bea38ef7",
+                                        "value": 69,
+                                        "referenceNode": "65d83656050ce9ddd865e717",
+                                        "parentNode": "65d8388c050ce9ddd865e768",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    },
+                                    {
+                                        "_id": "65d84cb3f99d5e40bea38f07",
+                                        "value": 70,
+                                        "referenceNode": "65d83656050ce9ddd865e717",
+                                        "parentNode": "65d8388c050ce9ddd865e768",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    }
+                                ],
+                                "__v": 0
+                            },
+                            {
+                                "_id": "65d83b93f99d5e40bea38c92",
+                                "value": 24,
+                                "referenceNode": "65d837e6050ce9ddd865e746",
+                                "parentNode": "65d837e6050ce9ddd865e746",
+                                "user": "65d58c02ff92538d09c4b81a",
+                                "tree": "65d8358c050ce9ddd865e70c",
+                                "inviteAccepted": 0,
+                                "children": [
+                                    {
+                                        "_id": "65d84eb5f99d5e40bea38f49",
+                                        "value": 71,
+                                        "referenceNode": "65d83656050ce9ddd865e717",
+                                        "parentNode": "65d83b93f99d5e40bea38c92",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    },
+                                    {
+                                        "_id": "65d84eb9f99d5e40bea38f5b",
+                                        "value": 72,
+                                        "referenceNode": "65d83656050ce9ddd865e717",
+                                        "parentNode": "65d83b93f99d5e40bea38c92",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    },
+                                    {
+                                        "_id": "65d84ebdf99d5e40bea38f6d",
+                                        "value": 73,
+                                        "referenceNode": "65d83656050ce9ddd865e717",
+                                        "parentNode": "65d83b93f99d5e40bea38c92",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    }
+                                ],
+                                "__v": 0
+                            },
+                            {
+                                "_id": "65d83b98f99d5e40bea38c98",
+                                "value": 25,
+                                "referenceNode": "65d837e6050ce9ddd865e746",
+                                "parentNode": "65d837e6050ce9ddd865e746",
+                                "user": "65d58c02ff92538d09c4b81a",
+                                "tree": "65d8358c050ce9ddd865e70c",
+                                "inviteAccepted": 3,
+                                "children": [
+                                    {
+                                        "_id": "65d84cd9f99d5e40bea38f0e",
+                                        "value": 74,
+                                        "referenceNode": "65d83b98f99d5e40bea38c98",
+                                        "parentNode": "65d83b98f99d5e40bea38c98",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    },
+                                    {
+                                        "_id": "65d84ce7f99d5e40bea38f14",
+                                        "value": 75,
+                                        "referenceNode": "65d83b98f99d5e40bea38c98",
+                                        "parentNode": "65d83b98f99d5e40bea38c98",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    },
+                                    {
+                                        "_id": "65d84cecf99d5e40bea38f1a",
+                                        "value": 76,
+                                        "referenceNode": "65d83b98f99d5e40bea38c98",
+                                        "parentNode": "65d83b98f99d5e40bea38c98",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    }
+                                ],
+                                "__v": 0
+                            }
+                        ],
+                        "__v": 0
+                    },
+                    {
+                        "_id": "65d837ee050ce9ddd865e752",
+                        "value": 9,
+                        "referenceNode": "65d8358c050ce9ddd865e70a",
+                        "parentNode": "65d83656050ce9ddd865e717",
+                        "user": "65d58c02ff92538d09c4b81a",
+                        "tree": "65d8358c050ce9ddd865e70c",
+                        "inviteAccepted": 3,
+                        "children": [
+                            {
+                                "_id": "65d83b42f99d5e40bea38c80",
+                                "value": 26,
+                                "referenceNode": "65d837ee050ce9ddd865e752",
+                                "parentNode": "65d837ee050ce9ddd865e752",
+                                "user": "65d58c02ff92538d09c4b81a",
+                                "tree": "65d8358c050ce9ddd865e70c",
+                                "inviteAccepted": 0,
+                                "children": [],
+                                "__v": 0
+                            },
+                            {
+                                "_id": "65d83b47f99d5e40bea38c86",
+                                "value": 27,
+                                "referenceNode": "65d837ee050ce9ddd865e752",
+                                "parentNode": "65d837ee050ce9ddd865e752",
+                                "user": "65d58c02ff92538d09c4b81a",
+                                "tree": "65d8358c050ce9ddd865e70c",
+                                "inviteAccepted": 0,
+                                "children": [],
+                                "__v": 0
+                            },
+                            {
+                                "_id": "65d83b4bf99d5e40bea38c8c",
+                                "value": 28,
+                                "referenceNode": "65d837ee050ce9ddd865e752",
+                                "parentNode": "65d837ee050ce9ddd865e752",
+                                "user": "65d58c02ff92538d09c4b81a",
+                                "tree": "65d8358c050ce9ddd865e70c",
+                                "inviteAccepted": 0,
+                                "children": [],
+                                "__v": 0
+                            }
+                        ],
+                        "__v": 0
+                    },
+                    {
+                        "_id": "65d837f3050ce9ddd865e75e",
+                        "value": 10,
+                        "referenceNode": "65d8358c050ce9ddd865e70a",
+                        "parentNode": "65d83656050ce9ddd865e717",
+                        "user": "65d58c02ff92538d09c4b81a",
+                        "tree": "65d8358c050ce9ddd865e70c",
+                        "inviteAccepted": 3,
+                        "children": [
+                            {
+                                "_id": "65d83cb1f99d5e40bea38d05",
+                                "value": 29,
+                                "referenceNode": "65d8358c050ce9ddd865e70a",
+                                "parentNode": "65d837f3050ce9ddd865e75e",
+                                "user": "65d58c02ff92538d09c4b81a",
+                                "tree": "65d8358c050ce9ddd865e70c",
+                                "inviteAccepted": 0,
+                                "children": [
+                                    {
+                                        "_id": "65d84e0bf99d5e40bea38f23",
+                                        "value": 86,
+                                        "referenceNode": "65d837f3050ce9ddd865e75e",
+                                        "parentNode": "65d83cb1f99d5e40bea38d05",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    },
+                                    {
+                                        "_id": "65d84e40f99d5e40bea38f2d",
+                                        "value": 87,
+                                        "referenceNode": "65d837f3050ce9ddd865e75e",
+                                        "parentNode": "65d83cb1f99d5e40bea38d05",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    },
+                                    {
+                                        "_id": "65d84e44f99d5e40bea38f37",
+                                        "value": 88,
+                                        "referenceNode": "65d837f3050ce9ddd865e75e",
+                                        "parentNode": "65d83cb1f99d5e40bea38d05",
+                                        "user": "65d58c02ff92538d09c4b81a",
+                                        "tree": "65d8358c050ce9ddd865e70c",
+                                        "inviteAccepted": 0,
+                                        "children": [],
+                                        "__v": 0
+                                    }
+                                ],
+                                "__v": 0
+                            },
+                            {
+                                "_id": "65d83d26f99d5e40bea38d13",
+                                "value": 30,
+                                "referenceNode": "65d83656050ce9ddd865e717",
+                                "parentNode": "65d837f3050ce9ddd865e75e",
+                                "user": "65d58c02ff92538d09c4b81a",
+                                "tree": "65d8358c050ce9ddd865e70c",
+                                "inviteAccepted": 0,
+                                "children": [],
+                                "__v": 0
+                            },
+                            {
+                                "_id": "65d83d37f99d5e40bea38d21",
+                                "value": 31,
+                                "referenceNode": "65d83656050ce9ddd865e717",
+                                "parentNode": "65d837f3050ce9ddd865e75e",
+                                "user": "65d58c02ff92538d09c4b81a",
+                                "tree": "65d8358c050ce9ddd865e70c",
+                                "inviteAccepted": 0,
+                                "children": [],
+                                "__v": 0
+                            }
+                        ],
+                        "__v": 0
+                    }
+                ],
+                "__v": 0
+            },
+            {
+                "_id": "65d8365c050ce9ddd865e71d",
+                "value": 4,
+                "referenceNode": "65d8358c050ce9ddd865e70a",
+                "parentNode": "65d8358c050ce9ddd865e70a",
+                "user": "65d58c02ff92538d09c4b81a",
+                "tree": "65d8358c050ce9ddd865e70c",
+                "inviteAccepted": 3,
+                "children": [
+                    {
+                        "_id": "65d83925050ce9ddd865e780",
+                        "value": 11,
+                        "referenceNode": "65d8358c050ce9ddd865e70a",
+                        "parentNode": "65d8365c050ce9ddd865e71d",
+                        "user": "65d58c02ff92538d09c4b81a",
+                        "tree": "65d8358c050ce9ddd865e70c",
+                        "inviteAccepted": 3,
+                        "children": [
+                            {
+                                "_id": "65d83ace050ce9ddd865e7cf",
+                                "value": 32,
+                                "referenceNode": "65d83925050ce9ddd865e780",
+                                "parentNode": "65d83925050ce9ddd865e780",
+                                "user": "65d58c02ff92538d09c4b81a",
+                                "tree": "65d8358c050ce9ddd865e70c",
+                                "inviteAccepted": 0,
+                                "children": [],
+                                "__v": 0
+                            },
+                            {
+                                "_id": "65d83b02f99d5e40bea38c74",
+                                "value": 33,
+                                "referenceNode": "65d83925050ce9ddd865e780",
+                                "parentNode": "65d83925050ce9ddd865e780",
+                                "user": "65d58c02ff92538d09c4b81a",
+                                "tree": "65d8358c050ce9ddd865e70c",
+                                "inviteAccepted": 0,
+                                "children": [],
+                                "__v": 0
+                            },
+                            {
+                                "_id": "65d83b07f99d5e40bea38c7a",
+                                "value": 34,
+                                "referenceNode": "65d83925050ce9ddd865e780",
+                                "parentNode": "65d83925050ce9ddd865e780",
+                                "user": "65d58c02ff92538d09c4b81a",
+                                "tree": "65d8358c050ce9ddd865e70c",
+                                "inviteAccepted": 0,
+                                "children": [],
+                                "__v": 0
+                            }
+                        ],
+                        "__v": 0
+                    },
+                    {
+                        "_id": "65d8393e050ce9ddd865e78e",
+                        "value": 12,
+                        "referenceNode": "65d8358c050ce9ddd865e70a",
+                        "parentNode": "65d8365c050ce9ddd865e71d",
+                        "user": "65d58c02ff92538d09c4b81a",
+                        "tree": "65d8358c050ce9ddd865e70c",
+                        "inviteAccepted": 0,
+                        "children": [
+                            {
+                                "_id": "65d83d62f99d5e40bea38d3f",
+                                "value": 35,
+                                "referenceNode": "65d8358c050ce9ddd865e70a",
+                                "parentNode": "65d8393e050ce9ddd865e78e",
+                                "user": "65d58c02ff92538d09c4b81a",
+                                "tree": "65d8358c050ce9ddd865e70c",
+                                "inviteAccepted": 0,
+                                "children": [],
+                                "__v": 0
+                            },
+                            {
+                                "_id": "65d83d84f99d5e40bea38d5d",
+                                "value": 36,
+                                "referenceNode": "65d8358c050ce9ddd865e70a",
+                                "parentNode": "65d8393e050ce9ddd865e78e",
+                                "user": "65d58c02ff92538d09c4b81a",
+                                "tree": "65d8358c050ce9ddd865e70c",
+                                "inviteAccepted": 0,
+                                "children": [],
+                                "__v": 0
+                            },
+                            {
+                                "_id": "65d83d88f99d5e40bea38d7b",
+                                "value": 37,
+                                "referenceNode": "65d8358c050ce9ddd865e70a",
+                                "parentNode": "65d8393e050ce9ddd865e78e",
+                                "user": "65d58c02ff92538d09c4b81a",
+                                "tree": "65d8358c050ce9ddd865e70c",
+                                "inviteAccepted": 0,
+                                "children": [],
+                                "__v": 0
+                            }
+                        ],
+                        "__v": 0
+                    },
+                    {
+                        "_id": "65d83950050ce9ddd865e79c",
+                        "value": 13,
+                        "referenceNode": "65d8358c050ce9ddd865e70a",
+                        "parentNode": "65d8365c050ce9ddd865e71d",
+                        "user": "65d58c02ff92538d09c4b81a",
+                        "tree": "65d8358c050ce9ddd865e70c",
+                        "inviteAccepted": 0,
+                        "children": [
+                            {
+                                "_id": "65d83e13f99d5e40bea38db9",
+                                "value": 38,
+                                "referenceNode": "65d8365c050ce9ddd865e71d",
+                                "parentNode": "65d83950050ce9ddd865e79c",
+                                "user": "65d58c02ff92538d09c4b81a",
+                                "tree": "65d8358c050ce9ddd865e70c",
+                                "inviteAccepted": 0,
+                                "children": [],
+                                "__v": 0
+                            },
+                            {
+                                "_id": "65d83e23f99d5e40bea38dc7",
+                                "value": 39,
+                                "referenceNode": "65d8365c050ce9ddd865e71d",
+                                "parentNode": "65d83950050ce9ddd865e79c",
+                                "user": "65d58c02ff92538d09c4b81a",
+                                "tree": "65d8358c050ce9ddd865e70c",
+                                "inviteAccepted": 0,
+                                "children": [],
+                                "__v": 0
+                            },
+                            {
+                                "_id": "65d83e31f99d5e40bea38dd5",
+                                "value": 40,
+                                "referenceNode": "65d8365c050ce9ddd865e71d",
+                                "parentNode": "65d83950050ce9ddd865e79c",
+                                "user": "65d58c02ff92538d09c4b81a",
+                                "tree": "65d8358c050ce9ddd865e70c",
+                                "inviteAccepted": 0,
+                                "children": [],
+                                "__v": 0
+                            }
+                        ],
+                        "__v": 0
+                    }
+                ],
+                "__v": 0
+            }
+        ],
+        "__v": 0,
+        "tree": "65d8358c050ce9ddd865e70c"
+    }
+}
