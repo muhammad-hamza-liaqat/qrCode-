@@ -127,6 +127,11 @@ const makingTree = async (req, res) => {
     const filename = `${imageName}.png`;
     const filePath = path.join(treesFolderPath, filename);
 
+    // Check if file already exists, if yes, remove it
+    if (fs.existsSync(filePath)) {
+      fs.unlinkSync(filePath);
+    }
+
     const buffer = canvas.toBuffer("image/png");
 
     // Save the image to a file
@@ -137,8 +142,6 @@ const makingTree = async (req, res) => {
     res.status(500).send("Internal server error");
   }
 };
-
-module.exports = { makingTree };
 
 
 module.exports = { makingTree };
