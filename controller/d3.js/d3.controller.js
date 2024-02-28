@@ -143,5 +143,8 @@ const makingTree = async (req, res) => {
   }
 };
 
+// the commented code will generate the graph eachtime with unique timestamp
+// the second code will required the imageName for generating the image in the png format. and will replace if the file names already exists
+
 
 module.exports = { makingTree };
